@@ -10,9 +10,8 @@ function App() {
       <NavbarPrincipal/>
       <PresentacionInicial/>
     </div>
-
-  
   );
+ 
 }
 
 export default App;

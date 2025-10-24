@@ -6,12 +6,25 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarPrincipal() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" fixed='top' className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#helioandes"><img src='/assest/images/icon.jpg' style={{width: '50px', height: '20px'}}></img> HelioAndes</Navbar.Brand>
+        <Navbar.Brand href="#helioandes">
+          <span style={{display:'flex', alignItems: 'center', gap: '10px'}}>
+            <img src="/assets/logoha/logo.png" 
+              alt= "Logo Helio Andes" 
+              style={{
+                width: "60px", 
+                height: "60px"}}/> 
+              <span style={{ fontWeight: 'bold', fontSize: '20px', color: '#1a2a3a'}}>
+                HelioAndes
+              </span>
+          </span>
+        </Navbar.Brand>
+
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="#inicio">Inicio</Nav.Link>
             <Nav.Link href="#servicios">Servicios</Nav.Link>
             <Nav.Link href="#soluciones">Soluciones</Nav.Link>
