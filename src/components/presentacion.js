@@ -1,27 +1,58 @@
-import React from 'react';
+import React from "react";
+import Badge from 'react-bootstrap/Badge';
+import Stack from 'react-bootstrap/Stack';
+
+
+
 
     function Principal() {
         return ( 
-            <div style={{ paddingTop: '70px' }}>
+         <Stack direction="horizontal" gap={2}> 
+            <div style={{ paddingTop: '150px' }}>
                 <div className='row mt-3'>
                    <div className='col-lg-6 '>
+                        <Badge style={{ backgroundColor: '#1b9ccfff', color: 'white' }}>Energia Solar</Badge>
                         <h2>Energía solar accesible y confiable para tu hogar o pyme</h2>
-                        <p>Dimensiona tu sistema, conoce el costo estimado y solicita asesoría en minutos. La DEMO te guía con valores referenciales
+                        <p class="text-justificado">Dimensiona tu sistema, conoce el costo estimado y solicita asesoría en minutos. La DEMO te guía con valores referenciales
                         </p>
-                        <a href="#demo" 
-                            className="btn btn-primary mt-2"
-                            style={{
-                            backgroundColor: '#237ea1ff',
-                            color:'white',
-                            border:'none',
-                            }}>
-                            Ver DEMO
-                        </a>
+                        <div style={{ display: 'flex', gap: '12px' }}>
+                            <a href="#demo" 
+                                className="btn btn-primary mt-2"
+                                style={{
+                                backgroundColor: '#1e85adff',
+                                color:'white',
+                                border:'none',
+                                }}>
+                                Ver DEMO
+                             </a>
+                            <a href="#demo" 
+                                className="btn btn-light mt-2 me-2"
+                                style={{
+                                backgroundColor: '#ecfaffff',
+                                color:'dark',
+                                border:'none',
+                                }}>
+                                Descargar DEMO
+                           </a>
+                        </div>   
                     </div>
+                    /*
+                     <div className="col-lg-6 text-center">
+                        <Image
+                        src="/imagenes/solar-panel.jpg" // ⬅️ Reemplaza por tu imagen real
+                        alt="Panel solar"
+                        fluid
+                        rounded
+                        style={{
+                            maxWidth: "90%",
+                            marginTop: "30px",
+                            borderRadius: "12px",
+                        }}
+                        />
+                    </div>*/
                 </div>   
             </div>
-
-            
+         </Stack> 
         );
     }
 
