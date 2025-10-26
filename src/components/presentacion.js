@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 import Stack from 'react-bootstrap/Stack';
-
-
-
+import { Image } from 'react-bootstrap';
 
     function Principal() {
         return ( 
@@ -36,21 +34,21 @@ import Stack from 'react-bootstrap/Stack';
                            </a>
                         </div>   
                     </div>
-                    /*
-                     <div className="col-lg-6 text-center">
+                    
+                    <div className="col-lg-6 text-center">
                         <Image
-                        src="/imagenes/solar-panel.jpg" // ⬅️ Reemplaza por tu imagen real
+                        src="/assets/logoha/energiasolar.png" // ⬅️ Reemplaza por tu imagen real
                         alt="Panel solar"
                         fluid
                         rounded
                         style={{
-                            maxWidth: "90%",
+                            maxWidth: "70%",
                             marginTop: "30px",
                             borderRadius: "12px",
                         }}
                         />
-                    </div>*/
-                </div>   
+                    </div>
+                </div>  
             </div>
          </Stack> 
         );
