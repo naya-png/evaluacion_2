@@ -13,9 +13,9 @@ function NavbarPrincipal() {
             <img src="/assets/logoha/logo.png" 
               alt= "Logo Helio Andes" 
               style={{
-                width: "60px", 
-                height: "60px"}}/> 
-              <span style={{ fontWeight: 'bold', fontSize: '20px', color: '#1a2a3a'}}>
+                width: "30px", 
+                height: "30px"}}/> 
+              <span style={{ fontWeight: 'bold', fontSize: '25px', color: '#000000ff'}}>
                 HelioAndes
               </span>
           </span>

@@ -5,16 +5,16 @@ import { Image } from 'react-bootstrap';
 
     function Principal() {
         return ( 
-         <Stack direction="horizontal" gap={2}> 
+         <Stack direction="horizontal" gap={1}> 
             <div style={{ paddingTop: '150px' }}>
                 <div className='row mt-3'>
                    <div className='col-lg-6 '>
-                        <Badge style={{ backgroundColor: '#1b9ccfff', color: 'white' }}>Energia Solar</Badge>
+                        <Badge style={{ backgroundColor: '#44b1dbff', color: 'white' }}>Energia Solar</Badge>
                         <h2>Energía solar accesible y confiable para tu hogar o pyme</h2>
                         <p class="text-justificado">Dimensiona tu sistema, conoce el costo estimado y solicita asesoría en minutos. La DEMO te guía con valores referenciales
                         </p>
                         <div style={{ display: 'flex', gap: '12px' }}>
-                            <a href="#demo" 
+                            <a href="#verdemo" 
                                 className="btn btn-primary mt-2"
                                 style={{
                                 backgroundColor: '#1e85adff',
@@ -37,14 +37,14 @@ import { Image } from 'react-bootstrap';
                     
                     <div className="col-lg-6 text-center">
                         <Image
-                        src="/assets/logoha/energiasolar.png" // ⬅️ Reemplaza por tu imagen real
+                        src="/assets/logoha/energiasolar.png" //reemplazamos  por nuestra imagen 
                         alt="Panel solar"
                         fluid
                         rounded
                         style={{
-                            maxWidth: "70%",
-                            marginTop: "30px",
-                            borderRadius: "12px",
+                            maxWidth: "75%",
+                            marginTop: "5px",
+                            borderRadius: "5px",
                         }}
                         />
                     </div>

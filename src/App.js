@@ -3,7 +3,7 @@ import './App.css';
 import NavbarPrincipal from './components/navbar';
 import PresentacionInicial from './components/presentacion';
 import ServiciosOfrecido from './components/servicios';
-
+import SolucionesOfrecidas from './components/soluciones';
 function App() {
 
   return (
@@ -11,6 +11,7 @@ function App() {
       <NavbarPrincipal/>
       <PresentacionInicial/>
       <ServiciosOfrecido/>
+      <SolucionesOfrecidas/>
     </div>
   );
  
