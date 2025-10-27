@@ -6,11 +6,11 @@ import { Image } from 'react-bootstrap';
     function Principal() {
         return ( 
          <Stack direction="horizontal" gap={1}> 
-            <div style={{ paddingTop: '150px' }}>
-                <div className='row mt-3'>
+            <div className='mt-6' style={{ paddingTop: '150px' }}>
+                <div className='row mb-2'>
                    <div className='col-lg-6 '>
-                        <Badge style={{ backgroundColor: '#44b1dbff', color: 'white' }}>Energia Solar</Badge>
-                        <h2>Energía solar accesible y confiable para tu hogar o pyme</h2>
+                        <Badge className="mb-8" style={{ backgroundColor: '#44b1dbff', color: 'white' }}>Energia Solar</Badge>
+                        <h2 className='mt-'>Energía solar accesible y confiable para tu hogar o pyme</h2>
                         <p class="text-justificado">Dimensiona tu sistema, conoce el costo estimado y solicita asesoría en minutos. La DEMO te guía con valores referenciales
                         </p>
                         <div style={{ display: 'flex', gap: '12px' }}>

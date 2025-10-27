@@ -36,10 +36,10 @@ function ServiciosOfrecido() {
           Estudio energético, instalación certificada, monitoreo y mantención.
         </p>
       </Col >  
-        <Row xs={2} md={4} className="g-4">
+        <Row xs={2} md={4} className="g-2">
           {servicios.map((servicio, idx) => (
             <Col key={idx}>
-              <Card style={{ padding: '0.2rem' }}>
+              <Card  style={{ padding: '0.2rem' }}>
                 <Card.Img variant="top d-flex align-items-center" 
                 src={servicio.imagen} 
                 style={{

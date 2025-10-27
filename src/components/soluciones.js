@@ -27,11 +27,11 @@ function SolucionesOfrecidas() {
         <h2 className="fw-bold text-start">Soluciones</h2>
       </Col>
       <Col xs={12} md={6}> 
-        <p style={{ color: '#797979ff', textAlign: 'right' }}>
+        <p className="text-muted mb-1" style={{ color: '#797979ff', textAlign: 'right' }}>
           Kits residenciales, PyME, off-grid con baterias e hibridos.
         </p>
       </Col >  
-        <Row xs={2} md={3} className="g-4">
+        <Row xs={2} md={3} className="g-2">
           {servicios.map((servicio, idx) => (
             <Col key={idx}>
               <Card >
