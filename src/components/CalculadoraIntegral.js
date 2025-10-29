@@ -10,17 +10,19 @@ const CalculadoraSolar = () => {
     cantidadBaterias: '',
     estructura: '',
     instalacionBase: '',
-    pesoEnvio: 90,
-    tipoTecho: 'Teja/Asfalto (+5%)',
-    region: 'RM ($5.000)',
-    complejidad: 'Baja (0%)',
-    subsidio: 'Sin subsidio (0%)',
-    envio: 'Estándar (dt 100)',
-    garantia: '12 meses (+2%)',
-    planPago: 'Contado (0%)',
-    tipoPie: 'Porcentaje',
-    valorPie: 10
+    pesoEnvio: 0,
+    tipoTecho: '',
+    region: '',
+    complejidad: '',
+    subsidio: '',
+    envio: '',
+    garantia: '',
+    planPago: '',
+    tipoPie: '',
+    valorPie: 0
   });
+
+  const estiloNumero = {color: '#828a91ff'};
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,16 +38,16 @@ const CalculadoraSolar = () => {
       cantidadBaterias: '',
       estructura: '',
       instalacionBase: '',
-      pesoEnvio: 90,
-      tipoTecho: 'Teja/Asfalto (+5%)',
-      region: 'RM ($5.000)',
-      complejidad: 'Baja (0%)',
-      subsidio: 'Sin subsidio (0%)',
-      envio: 'Estándar (dt 100)',
-      garantia: '12 meses (+2%)',
-      planPago: 'Contado (0%)',
-      tipoPie: 'Porcentaje',
-      valorPie: 10
+      pesoEnvio: 0,
+      tipoTecho: '',
+      region: '',
+      complejidad: '',
+      subsidio: '',
+      envio: '',
+      garantia: '',
+      planPago: '',
+      tipoPie: '',
+      valorPie: 0
     });
   };
 
@@ -59,23 +61,23 @@ const CalculadoraSolar = () => {
               <Card.Title className="fw-bold text-start mb-0">Formulario</Card.Title>
               <Form>
                 <Row>
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Potencia del panel (W)</Form.Label><Form.Control type="number" name="potenciaPanel" value={formData.potenciaPanel} onChange={handleChange} /></Form.Group></Col>
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Cantidad de paneles</Form.Label><Form.Control type="number" name="cantidadPaneles" value={formData.cantidadPaneles} onChange={handleChange} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Potencia del panel (W)</Form.Label><Form.Control type="number" name="potenciaPanel" value={formData.potenciaPanel} onChange={handleChange} style={estiloNumero} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Cantidad de paneles</Form.Label><Form.Control type="number" name="cantidadPaneles" value={formData.cantidadPaneles} onChange={handleChange} style={estiloNumero} /></Form.Group></Col>
                 </Row>
 
                 <Row className="mt-2">
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Inversor (precio)</Form.Label><Form.Control type="number" name="inversor" value={formData.inversor} onChange={handleChange} /></Form.Group></Col>
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Batería (precio unidad)</Form.Label><Form.Control type="number" name="bateria" value={formData.bateria} onChange={handleChange} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Inversor (precio)</Form.Label><Form.Control type="number" name="inversor" value={formData.inversor} onChange={handleChange} style={estiloNumero}/></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Batería (precio unidad)</Form.Label><Form.Control type="number" name="bateria" value={formData.bateria} onChange={handleChange} style={estiloNumero}/></Form.Group></Col>
                 </Row>
 
                 <Row className="mt-2">
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Cantidad baterías</Form.Label><Form.Control type="number" name="cantidadBaterias" value={formData.cantidadBaterias} onChange={handleChange} /></Form.Group></Col>
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Estruct./cableado</Form.Label><Form.Control type="number" name="estructura" value={formData.estructura} onChange={handleChange} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Cantidad baterías</Form.Label><Form.Control type="number" name="cantidadBaterias" value={formData.cantidadBaterias} onChange={handleChange} style={estiloNumero} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Estruct./cableado</Form.Label><Form.Control type="number" name="estructura" value={formData.estructura} onChange={handleChange} style={estiloNumero}/></Form.Group></Col>
                 </Row>
 
                 <Row className="mt-2">
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Instalación base</Form.Label><Form.Control type="number" name="instalacionBase" value={formData.instalacionBase} onChange={handleChange} /></Form.Group></Col>
-                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Peso envío (kg)</Form.Label><Form.Control type="number" name="pesoEnvio" value={formData.pesoEnvio} onChange={handleChange} /></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Instalación base</Form.Label><Form.Control type="number" name="instalacionBase" value={formData.instalacionBase} onChange={handleChange} style={estiloNumero}/></Form.Group></Col>
+                  <Col className="fw-bold text-start mb-0"><Form.Group><Form.Label>Peso envío (kg)</Form.Label><Form.Control type="number" name="pesoEnvio" value={formData.pesoEnvio} onChange={handleChange} style={estiloNumero}/></Form.Group></Col>
                 </Row>
 
                 <Row className="mt-2">
@@ -100,13 +102,13 @@ const CalculadoraSolar = () => {
 
                 <Form.Group className="mt-2">
                   <Form.Label className="fw-bold text-start mb-0">Valor de pie</Form.Label>
-                  <Form.Control type="number" name="valorPie" value={formData.valorPie} onChange={handleChange} />
-                  <Form.Text>Si es porcentaje, 10 = 10%</Form.Text>
+                  <Form.Control type="number" name="valorPie" value={formData.valorPie} onChange={handleChange} style={{ color: '#879097ff' }} />
+                  <Form.Text style={{ color: '#6c757d' }}>Si es porcentaje, 10 = 10%</Form.Text>
                 </Form.Group>
 
-                <div  className="btn btn-light mt-2 me-2">
-                  <Button className="fw-bold text-start mb-0 border border-lightgray rounded fw-bold " variant="white" onClick={handleReset}>Reiniciar</Button>
-                  <Button className="fw-bold text-start mb-0 border border-lightgray rounded fw-bold" variant="white">Copiar resumen</Button>
+                <div  className="btn mt-2 me-2">
+                  <Button className="fw-bold text-start mb-0 border border-lightgray rounded me-2" variant="white" onClick={handleReset}>Reiniciar</Button>
+                  <Button className="fw-bold text-start mb-0 border border-lightgray rounded " variant="white">Copiar resumen</Button>
                 </div>
               </Form>
             </Card.Body>
@@ -116,24 +118,29 @@ const CalculadoraSolar = () => {
         {/* Resumen */}
         <Col md={6}>
           <Card>
-            <Card.Body>
-              <Card.Title className="fw-bold text-start mb-0">Resumen</Card.Title>
-              <ul className="list-unstyled">
-                <li>Potencia estimada (kW): —</li>
-                <li>Subtotal equipos: $—</li>
-                <li>Recargo techo: $—</li>
-                <li>Subsidio: $—</li>
-                <li>Instalación final: $—</li>
-                <li>IVA 19%: $—</li>
-                <li>Envío: $—</li>
-                <li>Garantía: $—</li>
-                <li>Total antes de financiar: $—</li>
-                <li>Pie: $—</li>
-                <li>Interés total: $—</li>
-                <li>Cuota: $—</li>
-                <li><strong>Total final: $—</strong></li>
-              </ul>
-              <small className="text-muted">Valores referenciales para el prototipo.</small>
+            <Card.Body >
+              <Card.Title className="fw-bold text-start mb-3">Resumen</Card.Title>
+              {[
+                ['Potencia estimada (kW)',    '-'],
+                ['Subtotal equipos',          '-'],
+                ['Recargo techo',            '$-'],
+                ['Subsidio',                 '$-'],
+                ['Istalación final',         '$-'],
+                ['IVA  19%',                 '$-'],
+                ['Envio',                    '$-'],
+                ['Garantía',                 '$—'],
+                ['Total antes de financiar', '$—'],
+                ['Pie',                      '$—'],
+                ['Interés total',            '$—'],
+                ['Cuota',                    '$—'],
+                ['Total final',              '$—']
+                ].map(([label, value], idx) => (
+                <Row key={idx} className="mb-2">
+                <Col xs={7} className="fw-bold text-start">{label}</Col>
+                <Col xs={5} className="text-end" style={{ color: '#6c757d' }}>{value}</Col>
+                </Row>
+                ))}
+              <small className="text-muted d-block mt-3">Valores referenciales para el prototipo.</small>
             </Card.Body>
           </Card>
         </Col>
