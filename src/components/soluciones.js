@@ -1,7 +1,5 @@
 import { Row, Col, Card } from 'react-bootstrap';
 
-
-
 function SolucionesOfrecidas() {
   const servicios = [
     {
@@ -28,28 +26,26 @@ function SolucionesOfrecidas() {
           <h2 className="fw-bold text-start">Soluciones</h2>
         </Col>
         <Col xs={12} md={6}>
-          <p style={{ color: '#797979ff', textAlign: 'right' }}>
+          <p className="soluciones-descripcion">
             Kits residenciales, PyME, off-grid con baterias e hibridos.
           </p>
         </Col >
         <Row xs={2} md={3} className="g-3">
           {servicios.map((servicio, idx) => (
             <Col key={idx}>
-              <Card >
-                <Card.Img variant="top d-flex align-items-center"
+              <Card className="solucion-card">
+                <Card.Img
+                  variant="top"
+                  className="solucion-img"
                   src={servicio.imagen}
-                  style={{
-                    width: '70px',
-                    height: '70px',
-                    objectFit: 'scale-down',
-                    margin: 'initial'
-                  }}
                 />
-                <Card.Body style={{ padding: '0.25rem' }}>
-                  <Card.Title style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>
+                <Card.Body className="solucion-body">
+                  <Card.Title className="solucion-titulo">
                     {servicio.titulo}
                   </Card.Title>
-                  <Card.Text style={{ color: '#999999ff', fontSize: '0.9rem', textAlign: 'left' }}>{servicio.texto}</Card.Text>
+                  <Card.Text className="solucion-texto">
+                    {servicio.texto}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

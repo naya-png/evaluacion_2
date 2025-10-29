@@ -13,7 +13,7 @@ function FAQ() {
     <section id="faq" className="py-4">
       <Container>
         <h2 className="fw-bold text-start">Preguntas frecuentes</h2>
-        <p style={{ color: '#797979ff', textAlign: 'right' }}>
+        <p className="faq-descripcion">
           Cuéntanos tu proyecto y agenda una asesoría.
         </p>
         <Accordion>

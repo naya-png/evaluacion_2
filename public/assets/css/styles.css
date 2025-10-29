@@ -34,7 +34,8 @@
 /* ===== FOOTER ===== */
 .footer-full {
   width: 100%;
-  background-color: #074f57; /* azul petróleo */
+  background-color: #074f57;
+  /* azul petróleo */
   color: #ffffff;
   text-align: center;
   padding: 3rem 2rem;
@@ -48,7 +49,8 @@
 }
 
 .footer-full a:hover {
-  color: #a0e0dd; /* tono celeste al pasar el cursor */
+  color: #a0e0dd;
+  /* tono celeste al pasar el cursor */
 }
 
 .footer-full p {
@@ -57,18 +59,19 @@
 }
 
 /* ===== CALCULADORA ===== */
-.container .parrafo-calcularora{
-    color: #6c757d;
-    line-height: 1.6;
-    text-align: center;
-    margin: 0;
+.container .parrafo-calcularora {
+  color: #6c757d;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
 }
-.container .titulo-destacado{
-    font-size: 2.25rem;
-    font-weight: 600;
-    color: darkslategrey;
-    margin-bottom: 1rem;
-    text-align: center;
+
+.container .titulo-destacado {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: darkslategrey;
+  margin-bottom: 1rem;
+  text-align: center;
 
 }
 
@@ -106,4 +109,325 @@
 
 #demo-calculadora .table-info {
   background-color: #e7f3ff;
+}
+
+/* ---------- Navbar (centralizado) ---------- */
+
+.navbar-section {
+  padding-top: 3rem;
+  /* equivale a py-5 superior */
+  padding-bottom: 3rem;
+}
+
+.navbar-principal {
+  background-color: #f8f9fa;
+  /* bg-body-tertiary */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.navbar-text-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+/* Links dentro del Nav */
+.navbar-links {
+  margin-left: auto;
+  /* equivalente a ms-auto */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-links .nav-link {
+  color: #000;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-links .nav-link:hover,
+.navbar-links .nav-link:focus {
+  color: #0d6efd;
+  /* color de acento bootstrap */
+  text-decoration: none;
+}
+
+.navbar-links .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 500;
+}
+
+/* ---------- Sección de Presentación ---------- */
+
+.presentacion-section {
+  padding-top: 125px;
+}
+
+.presentacion-badge {
+  background-color: #074f57;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.5em 0.8em;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.presentacion-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #000000;
+}
+
+.presentacion-text {
+  text-align: justify;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botones */
+.presentacion-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.presentacion-btn-primary {
+  background-color: #074f57;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.presentacion-btn-primary:hover {
+  background-color: #053d45;
+  color: #ffffff;
+}
+
+.presentacion-btn-secondary {
+  background-color: #ecfaff;
+  color: #000000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.presentacion-btn-secondary:hover {
+  background-color: #d7f4f9;
+  color: #000000;
+}
+
+/* Imagen */
+.presentacion-img {
+  max-width: 75%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* ---------- Sección Servicios ---------- */
+
+.servicios-section {
+  padding: 2rem 0;
+  /* reemplaza py-4 */
+}
+
+.servicios-header {
+  margin: 1.5rem 0;
+  /* reemplaza my-4 */
+}
+
+.servicios-titulo {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.servicios-descripcion {
+  color: #797979;
+  text-align: right;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Grid de servicios */
+.servicios-grid {
+  margin-top: 1rem;
+}
+
+/* Card individual */
+.servicio-card {
+  padding: 0.2rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.servicio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagen */
+.servicio-imagen {
+  width: 70px;
+  height: 70px;
+  object-fit: scale-down;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Contenido */
+.servicio-body {
+  padding: 0.25rem;
+}
+
+.servicio-titulo {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.servicio-texto {
+  color: #999999;
+  font-size: 0.85rem;
+  text-align: left;
+  margin: 0;
+}
+
+/* ---------- Sección Soluciones ---------- */
+.soluciones-descripcion {
+  color: #797979ff;
+  text-align: right;
+}
+
+.solucion-card {
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.solucion-card:hover {
+  transform: translateY(-3px);
+}
+
+.solucion-img {
+  width: 70px;
+  height: 70px;
+  object-fit: scale-down;
+  margin: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.solucion-body {
+  padding: 0.25rem;
+}
+
+.solucion-titulo {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.solucion-texto {
+  color: #999999ff;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* ---------- Sección Testimonios ---------- */
+
+.testimonios-descripcion {
+color: #797979ff;
+text-align: right;
+}
+
+.testimonio-card {
+border: none;
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease;
+}
+
+.testimonio-card:hover {
+transform: translateY(-3px);
+}
+
+.testimonio-img {
+width: 70px;
+height: 70px;
+object-fit: scale-down;
+margin: initial;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+padding-top: 1rem;
+}
+
+.testimonio-body {
+padding: 0.6rem;
+}
+
+.testimonio-titulo {
+font-size: 1rem;
+margin-bottom: 0.5rem;
+}
+
+.testimonio-texto {
+color: #999999ff;
+font-size: 0.9rem;
+text-align: left;
+}
+
+/* ---------- Sección FAQ ---------- */
+.faq-descripcion {
+color: #797979ff;
+text-align: right;
+}
+
+#faq .accordion-item {
+border: none;
+border-bottom: 1px solid #e0e0e0;
+}
+
+#faq .accordion-header button {
+font-weight: 500;
+}
+
+#faq .accordion-body {
+color: #555;
+font-size: 0.95rem;
+line-height: 1.4;
 }

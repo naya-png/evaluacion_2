@@ -2,31 +2,24 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarPrincipal() {
   return (
-    <section id="inicio" className="py-5">
-      <Navbar expand="lg" fixed='top' className="bg-body-tertiary">
+    <section id="inicio" className="navbar-section">
+      <Navbar expand="lg" fixed="top" className="navbar-principal">
         <Container>
-          <Navbar.Brand href="#helioandes">
-            <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <img src="/assets/logoha/logo.png"
-                alt="Logo Helio Andes"
-                style={{
-                  width: "30px",
-                  height: "30px"
-                }} />
-              <span style={{ fontWeight: 'bold', fontSize: '25px', color: '#000000ff' }}>
-                HelioAndes
-              </span>
-            </span>
+          <Navbar.Brand href="#helioandes" className="navbar-brand-custom">
+            <img
+              src="/assets/logoha/logo.png"
+              alt="Logo Helio Andes"
+              className="navbar-logo"
+            />
+            <span className="navbar-text-brand">HelioAndes</span>
           </Navbar.Brand>
-
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="navbar-links">
               <Nav.Link href="#inicio">Inicio</Nav.Link>
               <Nav.Link href="#servicios">Servicios</Nav.Link>
               <Nav.Link href="#soluciones">Soluciones</Nav.Link>
@@ -40,9 +33,7 @@ function NavbarPrincipal() {
         </Container>
       </Navbar>
     </section>
-
   );
-
 }
 
 export default NavbarPrincipal;
