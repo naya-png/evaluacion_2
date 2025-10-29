@@ -11,20 +11,20 @@ const faqs = [
 function FAQ() {
   return (
     <section id="faq" className="py-4">
-    <Container>
-      <h2 className="fw-bold text-start">Preguntas frecuentes</h2>
-       <p style={{ color: '#797979ff', textAlign: 'right' }}>
-                Cuéntanos tu proyecto y agenda una asesoría.
-              </p>
-      <Accordion>
-        {faqs.map((f, idx) => (
-          <Accordion.Item eventKey={String(idx)} key={idx}>
-            <Accordion.Header>{f.q}</Accordion.Header>
-            <Accordion.Body>{f.a}</Accordion.Body>
-          </Accordion.Item>
-        ))}
-      </Accordion>
-    </Container>
+      <Container>
+        <h2 className="fw-bold text-start">Preguntas frecuentes</h2>
+        <p style={{ color: '#797979ff', textAlign: 'right' }}>
+          Cuéntanos tu proyecto y agenda una asesoría.
+        </p>
+        <Accordion>
+          {faqs.map((f, idx) => (
+            <Accordion.Item eventKey={String(idx)} key={idx}>
+              <Accordion.Header>{f.q}</Accordion.Header>
+              <Accordion.Body>{f.a}</Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </Container>
     </section>
   );
 }

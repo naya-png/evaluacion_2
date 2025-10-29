@@ -29,9 +29,9 @@ function Planes() {
       <Container>
         <h2 className="fw-bold text-start mb-0">Planes</h2>
         <Row className="justify-content-center g-3">
-        <p className="text-muted mb-0" style={{ color: '#797979ff', textAlign: 'right' }} >
-          Elige el plan que se ajusta a tu proyecto.
-        </p>
+          <p className="text-muted mb-0" style={{ color: '#797979ff', textAlign: 'right' }} >
+            Elige el plan que se ajusta a tu proyecto.
+          </p>
           {planes.map((plan, idx) => (
             <Col key={idx} xs={12} md={6} lg={4}>
               <Card className="plan-card text-center h-100 shadow-sm border-0">

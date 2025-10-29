@@ -5,7 +5,7 @@ export default function Footer() {
   const año = new Date().getFullYear();
 
   return (
-    <footer className="footer-full text-white py-4 mt-5">
+    <footer expand="lg" className="footer-full text-white py-4 mt-5">
       <Container fluid className="text-center">
         <p className="mb-1 fw-semibold">
           HelioAndes Energía — Todos los derechos reservados © {año}
